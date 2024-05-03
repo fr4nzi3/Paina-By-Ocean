@@ -1,0 +1,145 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+/* Additional styles for the video */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Adjust the height as needed */
+}
+
+#home iframe {
+    width: 80%; /* Adjust the width as needed */
+    height: 80%; /* Adjust the height as needed */
+}
+
+/* Styles for the descriptions */
+.description {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Added margin at the bottom */
+    overflow-y: scroll;
+    height: 200px; /* Set a fixed height for scrolling */
+}
+
+/* Style for paragraph inside descriptions */
+.description p {
+    font-size: 1.1em;
+}
+
+/* Style for "Learn More" link */
+.learn-more {
+    margin-top: 10px;
+}
+
+.learn-more a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.learn-more a:hover {
+    color: #555;
+}
+
+/* Style for contact section */
+.contact-section {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    height: 300px; /* Increased height */
+    overflow-y: scroll;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.contact-section p a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section p a:hover {
+    color: #555;
+}
+
+/* Anchor link style */
+.scroll-down {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+}
+
+.scroll-down:hover {
+    color: #555;
+}
