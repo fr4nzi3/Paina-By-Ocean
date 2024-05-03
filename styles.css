@@ -61,6 +61,52 @@ footer p {
     font-size: 0.8em;
 }
 
+/* About section styles */
+#about {
+    background-color: #f2f2f2;
+    padding: 50px;
+    text-align: justify;
+}
+
+/* Pā'ina Boxes section styles */
+#paina-boxes {
+    background-color: #f2f2f2;
+    padding: 50px;
+    text-align: justify;
+}
+
+#paina-boxes h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Contact section styles */
+#contact {
+    background-color: #f2f2f2;
+    padding: 50px;
+    text-align: justify;
+}
+
+#contact h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Bonus section styles */
+#bonus {
+    background-color: #f2f2f2;
+    padding: 50px;
+    text-align: justify;
+}
+
+#bonus h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
 /* Additional styles for the video */
 #home {
     display: flex;
