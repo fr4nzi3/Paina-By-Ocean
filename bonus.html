@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pā'ina by Ocean - Bonus</title>
     <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="wordle.css">
+    <style>
+        header {
+            text-align: center;
+        }
+        #bonus h2 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,7 +32,7 @@
         <h2>Bonus: Pā'ina Wordle</h2>
         <div id="wordle-game">
             <div id="word-display"></div>
-            <input type="text" id="guess-input" maxlength="5" placeholder="Enter your guess">
+            <input type="text" id="guess-input" placeholder="Enter your guess">
             <button id="guess-btn">Guess</button>
         </div>
         <div id="result"></div>
@@ -34,6 +42,6 @@
     </footer>
 
     <!-- Link to the external JavaScript file -->
-    <script src="script.js"></script>
+    <script src="wordle.js"></script>
 </body>
 </html>
