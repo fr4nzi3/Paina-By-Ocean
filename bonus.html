@@ -4,83 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pā'ina by Ocean - Bonus</title>
-    <style>
-        /* Resetting default margin and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        /* Header styles */
-        header {
-            background-color: #1a1a1a;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.2em;
-        }
-
-        /* Navigation styles */
-        nav {
-            background-color: #333;
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 5px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        /* Bonus section styles */
-        #bonus {
-            background-color: #f2f2f2;
-            padding: 50px;
-            text-align: justify;
-        }
-
-        #bonus h2 {
-            color: #333;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-
-        /* Footer styles */
-        footer {
-            background-color: #1a1a1a;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer p {
-            font-size: 0.8em;
-        }
-    </style>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -96,11 +21,19 @@
     </nav>
     <section id="bonus">
         <!-- Content for the Bonus page -->
-        <h2>Bonus</h2>
-        <!-- Add more content as needed -->
+        <h2>Bonus: Pā'ina Wordle</h2>
+        <div id="wordle-game">
+            <div id="word-display"></div>
+            <input type="text" id="guess-input" maxlength="5" placeholder="Enter your guess">
+            <button id="guess-btn">Guess</button>
+        </div>
+        <div id="result"></div>
     </section>
     <footer>
         <p>&copy; 2024 Pā'ina by Ocean. All rights reserved.</p>
     </footer>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
