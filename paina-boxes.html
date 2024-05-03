@@ -4,112 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pā'ina by Ocean - Pā'ina Boxes</title>
-    <style>
-        /* Add your CSS styles here */
-        /* Resetting default margin and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        /* Header styles */
-        header {
-            background-color: #1a1a1a;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.2em;
-        }
-
-        /* Navigation styles */
-        nav {
-            background-color: #333;
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 5px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        /* Pā'ina Boxes section styles */
-        #paina-boxes {
-            background-color: #f2f2f2;
-            padding: 50px;
-            text-align: justify;
-        }
-
-        #paina-boxes h2 {
-            color: #333;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-
-        /* Form styles */
-        form {
-            margin-top: 20px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        form label {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        form input[type="text"],
-        form input[type="email"],
-        form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        form textarea {
-            height: 150px;
-        }
-
-        form input[type="submit"] {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        form input[type="submit"]:hover {
-            background-color: #555;
-        }
-    </style>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -129,25 +25,47 @@
         <p>Indulge in the essence of Hawai'i Island with our signature Pā'ina Boxes, meticulously curated with locally sourced produce and accompanied by easy-to-follow recipes. Each purchase directly uplifts our community of Hawai'i Island purveyors, fostering a sustainable and vibrant culinary ecosystem.</p>
         <p>For businesses, organizations, and individuals seeking distinctive gifting solutions, we offer bulk purchase options for our Pā'ina Boxes. With a minimum order of 50 boxes, you can customize your selections from an extensive range of seasonal delights sourced from over 60 island vendors. Let us help you spread joy and appreciation through the gift of authentic island flavors.</p>
         
+        <!-- Image -->
+        <div class="image-container">
+            <img src="your-image-url.jpg" alt="Your Image Description">
+        </div>
+        
         <!-- Form -->
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <div class="form-container">
+            <form action="#" method="post" class="clearfix">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
 
-            <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" name="phone" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
 
-            <label for="address">Address:</label>
-            <textarea id="address" name="address" required></textarea>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="message">Additional Message:</label>
-            <textarea id="message" name="message"></textarea>
+                <label for="company">Company/Organization:</label>
+                <input type="text" id="company" name="company">
 
-            <input type="submit" value="Submit">
-        </form>
+                <label for="amount">Amount Needed:</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <label for="budget">Your Budget per Box:</label>
+                <input type="number" id="budget" name="budget" required>
+
+                <label for="pickup_date">Date for Drop Off/Pick-Up:</label>
+                <input type="date" id="pickup_date" name="pickup_date" required>
+
+                <label for="city_location">City/Location for Box Drop (Hawai'i Island only):</label>
+                <input type="text" id="city_location" name="city_location" required>
+
+                <label for="comments">Comments/Additional Info:</label>
+                <textarea id="comments" name="comments"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </section>
     <footer>
         <p>&copy; 2024 Pā'ina by Ocean. All rights reserved.</p>
