@@ -4,81 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pā'ina by Ocean - Contact Us</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Resetting default margin and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        /* Header styles */
-        header {
-            background-color: #1a1a1a;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.2em;
-        }
-
-        /* Navigation styles */
-        nav {
-            background-color: #333;
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 5px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        /* Contact section styles */
+        /* CSS for image and description layout */
         #contact {
-            background-color: #f2f2f2;
-            padding: 50px;
-            text-align: justify;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center content horizontally */
+            margin-top: 50px; /* Adjust margin as needed */
         }
 
-        #contact h2 {
-            color: #333;
-            font-size: 1.5em;
-            margin-bottom: 20px;
+        #contact img {
+            max-width: 50%; /* Adjust the percentage as needed */
+            height: auto;
+            margin-right: 20px; /* Adjust as needed */
         }
 
-        /* Footer styles */
-        footer {
-            background-color: #1a1a1a;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        #contact div {
+            flex: 1; /* Take remaining space */
         }
 
-        footer p {
-            font-size: 0.8em;
+        @media (max-width: 768px) {
+            /* Adjust layout for smaller screens */
+            #contact {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #contact img {
+                margin-right: 0;
+                margin-bottom: 20px;
+                max-width: 80%; /* Adjust the percentage as needed for smaller screens */
+            }
         }
     </style>
 </head>
@@ -96,9 +54,12 @@
     </nav>
     <section id="contact">
         <!-- Content for the Contact Us page -->
-        <h2>Contact Us</h2>
-        <p>Ready to plan your next event with Pā'ina by Ocean? Get in touch with us today!</p>
-        <p>Reach out to us via email at painabyocean@gmail.com and let's discuss delicious fare! Don't forget to connect with us on Instagram & Facebook at @painabyocean to stay in the loop with our newest offerings!</p>
+        <img src="social_media.jpg" alt="Contact Image ">
+        <div>
+            <h2>Contact Us</h2>
+            <p>Ready to plan your next event with Pā'ina by Ocean? Get in touch with us today!</p>
+            <p>Reach out to us via email at painabyocean@gmail.com and let's discuss delicious fare! Don't forget to connect with us on Instagram & Facebook at @painabyocean to stay in the loop with our newest offerings!</p>
+        </div>
     </section>
     <footer>
         <p>&copy; 2024 Pā'ina by Ocean. All rights reserved.</p>
